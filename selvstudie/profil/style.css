@@ -1,19 +1,39 @@
 * {
-    outline: 5px solid orange;
+    /*outline: 5px solid orange;*/
+}
+
+h1{
+    font-family: cursive;
 }
 
 .bio {
+    min-width:26rem;
+    max-width:70rem;
     display:flex;
 }
-
+.bio h3{
+    margin: 0;
+}
 .bilde{
     height:100px;
 }
+.bilde > p{
+    margin-top: 0;
+    font-size:small;
+}
+.bilde > img{
+    width: 10rem;
+}
 
 .biotext{
-    
+   margin-left:5px;
+    width:100%;
 }
 
 .contact{
     height: 100%;
+}
+
+.contact > p{
+    margin:0;
 }
