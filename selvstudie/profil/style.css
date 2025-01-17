@@ -1,26 +1,19 @@
-
-body{
-    position:relative;
+* {
+    outline: 5px solid orange;
 }
+
+.bio {
+    display:flex;
+}
+
 .bilde{
-    position:absolute;
+    height:100px;
 }
 
-.bilde > p{
-    margin-top: 0px;
-    font-size: 70%;
-    font-style: italic;
-    font-weight: bold;
-}
-.bio{
-    position:absolute;
-    left:20%;
+.biotext{
+    
 }
 
-.contacts{
-    position:relative;
-    width:100%;
-    height:100%;
-    bottom:0;
-    top: 0;
+.contact{
+    height: 100%;
 }
