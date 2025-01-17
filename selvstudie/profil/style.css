@@ -1,45 +1,89 @@
 * {
-    /*outline: 5px solid orange;*/
+    font-family:'cursive', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #707070;    color: #c9c9c9;
+    color: #c1c1d7;
+
 }
 
 h1{
-    font-family: cursive;
+    margin-bottom: 5px;
+    color: rgb(100,243,243);
 }
 
-.bio {
-    min-width:26rem;
-    max-width:70rem;
-    display:flex;
-    height:9.2rem;
-}
-.bio h3{
-    margin: 0;
-}
-.bilde{
-    height:100px;
-}
-
-.bilde > p{
+hr{
     margin-top: 0;
-    font-size:small;
+    margin-bottom: 15px;
+    border-color: #3cc9b3;
 }
-.bilde > img{
+
+#grid{
+    display:grid;
+    grid-template-areas: 
+    "header header"
+    "pic bio"
+    "footer footer";
+    column-gap: 5px;
+}
+#titel{
+    grid-area: header;
+    text-align: center;
+}
+
+#bilde{
+    grid-area:pic;
+    max-width: 10.1rem;
+    min-width: 10.1rem;
+}
+
+#bilde > img{
     width: 10rem;
 }
 
-.biotext{
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1; 
-    margin-left:5px; 
-    width:100%;
+#bilde > figcaption{
+    font-size: smaller;
+    font-weight: bold;
 }
 
-.contact{
-    margin-top:auto;
+#bio{
+    grid-area: bio;
+    margin-left: 0;
 }
 
-.contact > p{
+#bio > h3{
     margin: 0;
-    margin-top:auto;
+    font-size: 1.3rem;
+    color: #7ec1ff;
+    font-weight: 1000;
+    
+}
+
+#bio > p{
+    max-width: 550px;
+}
+
+#bun{
+    grid-area:footer;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+#bun>p{
+    margin: 0;
+    padding: 0;
+    color: #2a0f66;
+    font-weight: bold;
+}
+
+#bun > hr{
+    margin:5px 0px 5px;
+}
+
+a{
+    font-weight: bold;
+    font-size: bigger;
+    color:rgb(237, 92, 217);
+}
+
+a:hover{
+    color: blue;
 }
