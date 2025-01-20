@@ -1,0 +1,49 @@
+
+/* Setter opp fonts */
+@font-face{
+    font-family: figtree;
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+*{
+    font-family: figtree;
+}
+
+body {
+    background-color: hsl(47, 88%, 63%);
+}
+
+p{
+    font-size: 15px;
+}
+
+h1{
+    font-size: 22px;
+    font-weight:800;
+}
+
+.tags{
+    background-color: orange;
+    width:max-content;
+    margin: 5px;
+    padding:3px;
+}
+
+.date{
+    font-size:small;
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    border-radius:10px;
+    padding: 15px 25px;
+    box-shadow: 5px 10px #000000;
+    min-width: 375px;
+    max-width: 375px;
+}
+.author{
+    font-weight: 800;
+}
+
+.avatar{
+    width:30px;
+}
