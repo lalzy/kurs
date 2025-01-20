@@ -47,3 +47,13 @@ function reset(){
     tag.innerHTML = base
     tag.style.color = baseColor
 }
+
+function set(){
+    color = document.getElementById('textSet').value
+    tag.style.color = color
+
+    if(color != tag.style.color){
+        alert(`${color} is not a valid colour!`)
+        console.error("invalid colour!")
+    }
+}
