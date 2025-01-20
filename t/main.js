@@ -1,6 +1,8 @@
 trykket = 0
 base = document.querySelector('h1').innerHTML
 tag = document.querySelector('h1')
+baseColor = tag.style.color
+
 function skift(farge){
     tag.style.color = farge
     if (trykket == 0)
@@ -37,6 +39,11 @@ function farge(){
             break;
         default:
             trykket = 0
-            skift("black")
+            skift(baseColor)
     }
+}
+
+function reset(){
+    tag.innerHTML = base
+    tag.style.color = baseColor
 }
