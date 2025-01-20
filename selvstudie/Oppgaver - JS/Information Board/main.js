@@ -32,9 +32,39 @@ function clearBoard() {
 
 //A function to retrieve a message from the end user and store the message on the board 2D array before displaying it on screen
 function inputMessage() {
+  let error = false
   var message = prompt("Enter a message to display on the board");
   //Add some code here to fill in the board 2D array with all the letters from the input message!
   //The rule is: Add full words only on each row. If a word does not fit at the end of a row, start this new word on the next row. (No hyphenation of words when wrapping text!)
-  
-  displayBoard(board); 
+  let row = 0
+  let col = 0
+
+  // Loop through the words
+  message.split(" ").forEach((word) => {
+
+    // sanity check
+    if(word.length > 20){
+      alert("too long!")
+      error = true
+      return;
+      // next row and resets
+    }else if (word.length > 20 - col){
+      row++
+      col = 0
+    }
+    if (row > 3){
+      error = true
+      return;
+    }
+    let end = col + word.length
+    for(i = 0; col < end ; col++){
+      board[row][col]= word[i++];
+    }
+
+    if(col < 20)
+      board[row][col++] = " "
+    
+  });
+  if(!error)
+    displayBoard(board); 
 }
