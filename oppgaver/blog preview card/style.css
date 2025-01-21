@@ -36,8 +36,8 @@ h1{
     border-radius:25px;
     padding-block: 15px;
     padding-inline: 1.3rem 0.5rem; /* symetrisk */
-    width:350px;
-    min-width:350px; /*Garanterer */
+    width:350px; 
+    min-width:350px; /*Garanterer at den ikke forminsker seg.*/
     
     /*Setter opp rammen rundt.*/
     outline-style:solid;
@@ -68,6 +68,7 @@ h1{
     /* Forgrunnen */
     font-weight: 800;
 }
+
 /* Dato'en under tags'a */
 .date{
     font-size:small;
@@ -91,12 +92,14 @@ h1{
 /* Flytter og farger forfatter navnet */
 .author p{
     margin-left: 8px;
-    margin-top: 0.9rem;
+    margin-top: 0.5rem; /*Sentrer navnet i forhold til bilde.*/
     color: hsl(0, 0%, 7%);
 }
 
 /*Gjør forfatter bilde mindre.*/
 .avatar{
-    width:3rem;
-    height: 3rem;
+    width: 10%;
+    height: 10%;
+    /* width:3rem;
+    height: 3rem; */
 }
