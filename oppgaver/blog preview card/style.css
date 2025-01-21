@@ -12,13 +12,21 @@
 
 body {
     background-color: hsl(47, 88%, 63%);
-
     /* centrer til midten av vinduet */
-    position: absolute;
+
+    /* Flexbox solution */
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+    margin: 0;
+
+    /* transform solution */
+    /*position: absolute;
     top: 49%;
     left: 50%;
     margin: 0;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
 }
 
 
