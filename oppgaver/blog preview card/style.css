@@ -10,10 +10,15 @@
 
 body {
     background-color: hsl(47, 88%, 63%);
+    /* centrer til midten av vinduet */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 p{
-    font-size: 15px;
+    font-size: 16px;
 }
 
 h1{
@@ -22,10 +27,13 @@ h1{
 }
 
 .tags{
-    background-color: orange;
+    background-color: hsl(47, 88%, 63%);
     width:max-content;
     margin: 5px;
-    padding:3px;
+    margin-left: 0px;
+    padding-block:3px;
+    padding-inline: 0.5rem;
+    margin-top: 1rem;
 }
 
 .date{
@@ -34,16 +42,28 @@ h1{
 
 .card {
     background-color: hsl(0, 0%, 100%);
-    border-radius:10px;
+    border-radius:25px;
     padding: 15px 25px;
+    padding-right: 0px; /* for at det skal bli symetrisk*/
     box-shadow: 5px 10px #000000;
-    min-width: 375px;
-    max-width: 375px;
+    width:350px;
+    min-width:350px; /*Garanterer */
+}
+
+.summary{
+    margin: 20px;
+    margin-left: 0px;
+    color: hsl(0, 0%, 42%)
 }
 .author{
     font-weight: 800;
+    display:flex;
 }
-
+.author p{
+    margin-left: 8px;
+    margin-top: 1rem;
+}
 .avatar{
-    width:30px;
+    width:3rem;
+    height: 3rem;
 }
