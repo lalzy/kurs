@@ -1,17 +1,18 @@
 /* Laget av Svein Kristian. */
 
-
-/* Setter opp fonts */
+/* Setter opp font'en */
 @font-face{
     font-family: figtree;
     src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
 }
+
 *{
     font-family: figtree;
 }
 
 body {
     background-color: hsl(47, 88%, 63%);
+
     /* centrer til midten av vinduet */
     position: absolute;
     top: 49%;
@@ -19,9 +20,7 @@ body {
     margin: 0;
     transform: translate(-50%, -50%);
 }
-.cardLogo{
-    border-radius: 10px;
-}
+
 p{
     font-size: 16px;
 }
@@ -32,52 +31,73 @@ h1{
     font-weight:800;
 }
 
-.tags{
-    background-color: hsl(47, 88%, 63%);
-    width:max-content;
-    margin: 5px;
-    margin-left: 0px;
-    margin-bottom: 1rem;
-    padding-block:3px;
-    padding-inline: 0.5rem;
-    margin-top: 1rem;
-    font-weight: 800;
+/* Myker kanten til logo'en */
+.cardLogo{
+    border-radius: 10px;
 }
 
+
+/* Setter opp tag'en */
+.tags{
+    /*Tag bakgrunnen*/
+    background-color: hsl(47, 88%, 63%);
+    width:max-content;
+    padding-block:3px;
+    padding-inline: 0.5rem;
+    
+    /* Posisjonen */
+    margin: 1rem 5px 1rem 0px;
+    
+    /* Forgrunnen */
+    font-weight: 800;
+}
+/* Dato'en under tags'a */
 .date{
     font-size:small;
     font-weight: 500;
 }
 
-
+/* Setter opp selve kortet*/
 .card {
     background-color: hsl(0, 0%, 100%);
+
+    /* Setter opp størelse og formen. */
     border-radius:25px;
-    padding: 15px 25px;
+    padding: 15px;
+    padding-left: 1rem;
     padding-right: 0px; /* for at det skal bli symetrisk*/
-    box-shadow: 10px .55rem hsl(0, 0%, 7%);
     width:350px;
     min-width:350px; /*Garanterer */
     
+    box-shadow: 10px .55rem hsl(0, 0%, 7%);
+    
+    /*Setter opp rammen rundt.*/
     outline-style:solid;
     outline-width:1px;
     outline-color: hsl(0, 0%, 7%)
 }
 
+/* Setter opp hoved teksten. */
 .summary{
     margin: 20px;
     margin-left: 0px;
     color: hsl(0, 0%, 42%)
 }
+
+/* Flytter forfatter navnet til siden av bilde. */
 .author{
     font-weight: 800;
     display:flex;
 }
+
+/* Flytter og farger forfatter navnet */
 .author p{
     margin-left: 8px;
     margin-top: 0.9rem;
     color: hsl(0, 0%, 7%);
 }
+
+/*Gjør forfatter bilde mindre.*/
 .avatar{
     width:3rem;
     height: 3rem;
