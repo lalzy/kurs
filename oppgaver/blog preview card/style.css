@@ -25,6 +25,7 @@ p{
 }
 
 h1{
+    color: hsl(0, 0%, 7%);
     font-size: 22px;
     font-weight:800;
 }
@@ -52,13 +53,13 @@ h1{
     border-radius:25px;
     padding: 15px 25px;
     padding-right: 0px; /* for at det skal bli symetrisk*/
-    box-shadow: 10px .55rem  #000000;
+    box-shadow: 10px .55rem hsl(0, 0%, 7%);
     width:350px;
     min-width:350px; /*Garanterer */
     
     outline-style:solid;
     outline-width:1px;
-    outline-color: black;
+    outline-color: hsl(0, 0%, 7%)
 }
 
 .summary{
@@ -73,6 +74,7 @@ h1{
 .author p{
     margin-left: 8px;
     margin-top: 0.9rem;
+    color: hsl(0, 0%, 7%);
 }
 .avatar{
     width:3rem;
