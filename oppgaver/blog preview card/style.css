@@ -34,23 +34,31 @@ h1{
     width:max-content;
     margin: 5px;
     margin-left: 0px;
+    margin-bottom: 1rem;
     padding-block:3px;
     padding-inline: 0.5rem;
     margin-top: 1rem;
+    font-weight: 800;
 }
 
 .date{
     font-size:small;
+    font-weight: 500;
 }
+
 
 .card {
     background-color: hsl(0, 0%, 100%);
     border-radius:25px;
     padding: 15px 25px;
     padding-right: 0px; /* for at det skal bli symetrisk*/
-    box-shadow: 5px 10px #000000;
+    box-shadow: 10px .55rem  #000000;
     width:350px;
     min-width:350px; /*Garanterer */
+    
+    outline-style:solid;
+    outline-width:1px;
+    outline-color: black;
 }
 
 .summary{
@@ -64,7 +72,7 @@ h1{
 }
 .author p{
     margin-left: 8px;
-    margin-top: 1rem;
+    margin-top: 0.9rem;
 }
 .avatar{
     width:3rem;
