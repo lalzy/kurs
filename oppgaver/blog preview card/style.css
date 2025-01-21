@@ -21,9 +21,6 @@ body {
     transform: translate(-50%, -50%);
 }
 
-p{
-    font-size: 16px;
-}
 
 h1{
     color: hsl(0, 0%, 7%);
@@ -31,9 +28,29 @@ h1{
     font-weight:800;
 }
 
+/* Setter opp selve kortet*/
+.card {
+    background-color: hsl(0, 0%, 100%);
+
+    /* Setter opp størelse og formen. */
+    border-radius:25px;
+    padding-block: 15px;
+    padding-inline: 1.3rem 0.5rem; /* symetrisk */
+    width:350px;
+    min-width:350px; /*Garanterer */
+    
+    /*Setter opp rammen rundt.*/
+    outline-style:solid;
+    outline-width:1px;
+    outline-color: hsl(0, 0%, 7%);
+    box-shadow: 10px .55rem hsl(0, 0%, 7%);
+}
+
 /* Myker kanten til logo'en */
 .cardLogo{
     border-radius: 10px;
+    width: 95%;
+    height: auto;
 }
 
 
@@ -57,25 +74,6 @@ h1{
     font-weight: 500;
 }
 
-/* Setter opp selve kortet*/
-.card {
-    background-color: hsl(0, 0%, 100%);
-
-    /* Setter opp størelse og formen. */
-    border-radius:25px;
-    padding: 15px;
-    padding-left: 1rem;
-    padding-right: 0px; /* for at det skal bli symetrisk*/
-    width:350px;
-    min-width:350px; /*Garanterer */
-    
-    box-shadow: 10px .55rem hsl(0, 0%, 7%);
-    
-    /*Setter opp rammen rundt.*/
-    outline-style:solid;
-    outline-width:1px;
-    outline-color: hsl(0, 0%, 7%)
-}
 
 /* Setter opp hoved teksten. */
 .summary{
