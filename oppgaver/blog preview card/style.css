@@ -36,6 +36,11 @@ h1{
     font-weight:800;
 }
 
+h1:active, h1:hover{
+    color: hsl(47, 88%, 63%);
+    cursor:pointer;
+}
+
 /* Setter opp selve kortet*/
 .card {
     background-color: hsl(0, 0%, 100%);
