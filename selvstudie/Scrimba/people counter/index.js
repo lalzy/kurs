@@ -1,14 +1,19 @@
+var countEl = document.getElementById("count-el");    
 let count = 0
 let saved = false
 function increment(){
-    var element = document.getElementById("count-el");    
-    count = parseInt(element.textContent)
-    element.textContent = ++count;
+   count = parseInt(countEl.textContent)
+    countEl.textContent = ++count;
+}
+
+function resetCount(){
+    count = 0
+    countEl.textContent = count;
 }
 
 function save(){
     let doc = document.getElementById("save-el");
-    if(!doc.textContent.includes(count)){
+    if(count != 0){
         if(saved){
             doc.textContent += ` - ${count}`
         }else{
@@ -16,4 +21,5 @@ function save(){
             doc.textContent += `${count}`
         }
     }
+    resetCount()
 }
