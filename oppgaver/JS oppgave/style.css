@@ -1,0 +1,27 @@
+.city{
+    color:red;
+}
+
+.city:hover{
+    cursor:pointer;
+}
+
+.paris{
+    color:green;
+}
+
+.newyork:hover{
+    color:orange;
+}
+.london:hover{
+    color:aqua;
+}
+.paris:hover{
+    color: black;
+}
+.berlin:hover{
+    color:pink;
+}
+.copenhagen:hover{
+    color:purple;
+}
