@@ -1,0 +1,15 @@
+/home/skn/coding-projects/kurs/backend/bin/Debug/net8.0/backend
+/home/skn/coding-projects/kurs/backend/bin/Debug/net8.0/backend.deps.json
+/home/skn/coding-projects/kurs/backend/bin/Debug/net8.0/backend.runtimeconfig.json
+/home/skn/coding-projects/kurs/backend/bin/Debug/net8.0/backend.dll
+/home/skn/coding-projects/kurs/backend/bin/Debug/net8.0/backend.pdb
+/home/skn/coding-projects/kurs/backend/obj/Debug/net8.0/backend.GeneratedMSBuildEditorConfig.editorconfig
+/home/skn/coding-projects/kurs/backend/obj/Debug/net8.0/backend.AssemblyInfoInputs.cache
+/home/skn/coding-projects/kurs/backend/obj/Debug/net8.0/backend.AssemblyInfo.cs
+/home/skn/coding-projects/kurs/backend/obj/Debug/net8.0/backend.csproj.CoreCompileInputs.cache
+/home/skn/coding-projects/kurs/backend/obj/Debug/net8.0/backend.sourcelink.json
+/home/skn/coding-projects/kurs/backend/obj/Debug/net8.0/backend.dll
+/home/skn/coding-projects/kurs/backend/obj/Debug/net8.0/refint/backend.dll
+/home/skn/coding-projects/kurs/backend/obj/Debug/net8.0/backend.pdb
+/home/skn/coding-projects/kurs/backend/obj/Debug/net8.0/backend.genruntimeconfig.cache
+/home/skn/coding-projects/kurs/backend/obj/Debug/net8.0/ref/backend.dll
