@@ -1,20 +1,18 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿Person svein = new Person("ola", "nordman", 23);
+
+Console.WriteLine(svein.getNavn());
+
+String[] navn = svein.alleNavn();
 
 
+Console.WriteLine(navn[0] + ", " + navn[1]);
 
-
-Person svein = new Person("Svein", 23);
-
+svein.upper();
 
 Console.WriteLine(svein.getNavn());
 
 
-
-
-
-
-
-
+Console.BackgroundColor = ConsoleColor.Blue;
 
 
 
